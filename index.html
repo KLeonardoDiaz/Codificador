@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/Logo.png"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <header>
+    <img src="./img/Logo.png" alt="logo alura" class="logo">
+    <h1>Encriptador de Texto</h1>
+  </header>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea name="texto" class="texto" id="inputtexto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="img/muñeco.png" id="imgDerecha"/>
+        <h2 class="mensaje-encriptado" id="inftexto">Ningún mensaje fue encontrado</h2>
+        <textarea name="resp" id="resptext" cols="30" rows="10" style="display:none;">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
+        <button type="button" id="copiar" class="btn-copiar" value="Copiar" style="display:none;" onclick="copiar()">Copiar</button>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <h2>Desarrollado Por: Kevin Leonardo Díaz Barreto; Estudiante Y Programador Independiente </h2>
+  </footer>
+  <script src="index.js"></script>
+</html>
